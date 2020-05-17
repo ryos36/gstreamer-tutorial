@@ -1,6 +1,6 @@
-# STEP1: element に Pad を追加
-Pad を追加すると launch することができます。
-Pad の情報が出てきません。その上、まだこれでも何もできません。
+# STEP2: Pad 
+Pad に情報を追加したので情報が出るようになりました。
+その上、まだこれでも何もできません。
 
 ## build
 > meson . build 
@@ -35,7 +35,15 @@ or
                        +----GstTextNoop
 
     Pad Templates:
-      none
+      SINK template: 'sink'
+        Availability: Always
+        Capabilities:
+          ANY
+      
+      SRC template: 'src'
+        Availability: Always
+        Capabilities:
+          ANY
 
     Element has no clocking capabilities.
     Element has no URI handling capabilities.
