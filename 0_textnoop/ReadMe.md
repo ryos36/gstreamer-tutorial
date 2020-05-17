@@ -15,7 +15,18 @@ xgsttext ならだいじょうぶ。
 思われます。gcc の attribuite を使います。
 もっと古くは gcc/g++ (いまでも？) のアセンブラで使ってた技法ですね（たぶん）。
 
+# どうすれば？
+step0 から順々に src の下のソースを見ながら build 実行してみてください。
+build には meson と ninja が必要です。
+
+## gst version 
+> gst-inspect-1.0 --version
+    gst-inspect-1.0 version 1.14.5
+    GStreamer 1.14.5
+    https://launchpad.net/distros/ubuntu/+source/gstreamer1.0
+
 # 元ネタは？
 Hello Library World からのパクリです。すいません。LGPL とのことなので
 勝手に引用してます。
 http://hellolibraryworld.blogspot.com/2016/12/gstreamer-2-identity-textnoop-element.html
+
