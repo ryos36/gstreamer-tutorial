@@ -1,6 +1,7 @@
 # STEP2: Pad 
 Pad に情報を追加したので情報が出るようになりました。
 その上、まだこれでも何もできません。
+データを流そうとするとエラーになります。
 
 ## build
 > meson . build 
@@ -66,3 +67,15 @@ or
 > GST_PLUGIN_PATH=build gst-launch-1.0 -q fakesrc num-buffers=0 ! textnoop ! fakesink )
 or
 > ( setenv GST_PLUGIN_PATH build ; gst-launch-1.0 -q fakesrc num-buffers=0 ! textnoop ! fakesink )
+
+## error
+> GST_PLUGIN_PATH=. gst-launch-1.0 -q fakesrc num-buffers=1 ! textnoop ! fakesink
+or
+ ( setenv GST_PLUGIN_PATH build ; gst-launch-1.0 -q fakesrc num-buffers=1 ! textnoop ! fakesink )
+
+    (gst-launch-1.0:4934): GStreamer-CRITICAL **: 03:52:04.189: chain on pad textnoop0:sink but it has no chainfunction
+    ERROR: from element /GstPipeline:pipeline0/GstFakeSrc:fakesrc0: Internal data stream error.
+    Additional debug info:
+    gstbasesrc.c(3055): gst_base_src_loop (): /GstPipeline:pipeline0/GstFakeSrc:fakesrc0:
+    streaming stopped, reason not-supported (-6)
+    ERROR: pipeline doesn't want to preroll.
