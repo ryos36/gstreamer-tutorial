@@ -60,7 +60,7 @@ gst_text_noop_chain(GstPad * sinkpad,
                       GstBuffer * buffer)
 {
         GstPad *srcpad;
-        GstFlowRetrun ret;
+        GstFlowReturn ret;
 
         srcpad = gst_element_get_static_pad(GST_ELEMENT(parent), "src");
         ret = gst_pad_push(srcpad, buffer);
