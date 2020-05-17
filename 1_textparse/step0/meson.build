@@ -1,6 +1,6 @@
 project('gst-plugins-text', 'c', version : '0.1.0')
 
-src = ['src/gsttext.c', 'src/gsttextnoop.c', 'src/gsttextparse.c']
+src = ['src/gsttext.c', 'src/gsttextparse.c']
 
 gst_dep = dependency('gstreamer-base-1.0', version : '>1.0')
 
@@ -10,4 +10,4 @@ cdata.set_quoted('PACKAGE_VERSION', meson.project_version())
 
 configure_file(output : 'config.h', configuration : cdata)
 
-gsttext = library('gsttext', src, dependencies : gst_dep)
+gsttext = library('text', src, dependencies : gst_dep)
