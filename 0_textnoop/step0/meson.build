@@ -10,4 +10,4 @@ cdata.set_quoted('PACKAGE_VERSION', meson.project_version())
 
 configure_file(output : 'config.h', configuration : cdata)
 
-gsttext = library('gsttext', src, dependencies : gst_dep)
+gsttext = library('textnoop', src, dependencies : gst_dep)

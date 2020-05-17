@@ -13,10 +13,10 @@ plugin_init (GstPlugin * plugin)
 GST_PLUGIN_DEFINE (
         GST_VERSION_MAJOR,
         GST_VERSION_MINOR,
-        gsttext,
+        textnoop,
         "Text Plugins for GStreamer",
         plugin_init,
         PACKAGE_VERSION,
         "LGPL",
         "GStreamer Text Package",
-        "https://github/yashi/gst-plugins-text")
+        "https://github.com/ryos36/gstreamer-tutorial")
