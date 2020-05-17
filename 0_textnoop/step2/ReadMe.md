@@ -4,7 +4,7 @@ Pad に情報を追加したので情報が出るようになりました。
 データを流そうとするとエラーになります。
 
 ## build
-> meson . build 
+> meson build 
 > ninja -C build
 
 ## 確認

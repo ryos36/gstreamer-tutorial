@@ -2,7 +2,7 @@
 chain を追加したのでうまく動くようになりました。
 
 ## build
-> meson . build 
+> meson build 
 > ninja -C build
 
 ## OK

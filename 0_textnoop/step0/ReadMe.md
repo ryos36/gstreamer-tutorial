@@ -3,7 +3,7 @@
 gst-inspect-1.0 で内容を確認することが出来ます。
 
 ## build
-> meson . build 
+> meson build 
 > ninja -C build
 
 ## 確認

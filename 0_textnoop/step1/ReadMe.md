@@ -3,7 +3,7 @@ Pad を追加すると launch することができます。
 Pad の情報が出てきません。その上、まだこれでも何もできません。
 
 ## build
-> meson . build 
+> meson build 
 > ninja -C build
 
 ## 確認
