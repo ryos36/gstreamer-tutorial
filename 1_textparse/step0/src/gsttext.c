@@ -19,4 +19,4 @@ GST_PLUGIN_DEFINE (
         PACKAGE_VERSION,
         "LGPL",
         "GStreamer Text Package",
-        "https://github/yashi/gst-plugins-text")
+        "https://github/ryos36/gstreamer-tutorial")

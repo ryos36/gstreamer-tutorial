@@ -16,7 +16,7 @@ or
       Long-name                Text Parser element
       Klass                    Filter
       Description              Parse text stream 
-      Author                   Yasushi SHOJI <yasushi.shoji@gmail.com
+      Author                   Yasushi SHOJI 
 
     Plugin Details:
       Name                     text

@@ -1,3 +1,5 @@
+/* Original Source from Yasushi SHOJI https://github.com/yashi */
+
 #include "gsttextparse.h"
 
 struct _GstTextParse
@@ -33,7 +35,7 @@ gst_text_parse_class_init (GstTextParseClass * klass)
                                                "Text Parser element",
                                                "Filter",
                                                "Parse text stream ",
-                                               "Yasushi SHOJI <yasushi.shoji@gmail.com");
+                                               "Yasushi SHOJI");
 
         gst_element_class_add_static_pad_template (element_class, &srctemplate);
         gst_element_class_add_static_pad_template (element_class, &sinktemplate);
